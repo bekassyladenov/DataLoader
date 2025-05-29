@@ -1,0 +1,8 @@
+# data.yaml for Ultralytics YOLOv8
+path: /workspaces/DataLoader    # root dir of dataset
+train: images/train              # relative to `path`
+val:   images/val
+test:  images/test
+
+nc: 1                            # number of classes
+names: ['weed']                  # class names
