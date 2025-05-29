@@ -16,18 +16,7 @@ Batch-wise prediction visualization with bounding boxes
 
 Automated test coverage with pytest
 
-📁 Directory Structure
-bash
-Copy
-Edit
-├── weeds_loader.py           # Custom Dataset, transform, and DataLoader
-├── train_eval_rcnn.py       # Full training loop with mAP eval and checkpointing
-├── visualise_loader.py      # Visualize DataLoader batches with boxes
-├── predict_and_visualize.py # Model inference and bounding box display
-├── test_weeds_loader.py     # Pytest-based validation of DataLoader integrity
-├── dataset/
-│   ├── images/{train,val,test}/
-│   └── labels/{train,val,test}/
+
 ⚙️ Setup
 Install dependencies:
 
@@ -70,19 +59,6 @@ Copy
 Edit
 python predict_and_visualize.py
 Shows the first 5 test images with predicted boxes.
-
-🧪 Run Unit Tests
-bash
-Copy
-Edit
-pytest test_weeds_loader.py --img_dir=dataset/images/test --lbl_dir=dataset/labels/test
-Tests validate:
-
-Proper image format, normalization, and shape
-
-Label tensor format and box bounds
-
-Dataset loading structure and batching logic
 
 🧠 Model Architecture
 Backbone: mobilenet_v3_large_fpn
